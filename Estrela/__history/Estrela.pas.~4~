@@ -75,11 +75,10 @@ begin
 end;
 
 procedure TForm1.FormPaint(Sender: TObject);
-var x, y: Integer;
+var x, y: Double;
 begin
-  x := DefinePontoX(200, 200, 100, 0);
-  y := DefinePontoY(200, 200, 100, 0);
-
+  x := DefinePontoX(200.0, 200.0, 100.0, 0.0);
+  y := DefinePontoY(200.0, 200.0, 100.0, 0.0);
 {Desenhando a estrela}
   with Desenho do
   begin

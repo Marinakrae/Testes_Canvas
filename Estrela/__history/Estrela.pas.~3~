@@ -75,16 +75,11 @@ begin
 end;
 
 procedure TForm1.FormPaint(Sender: TObject);
-var x, y: Integer;
 begin
-  x := DefinePontoX(200, 200, 100, 0);
-  y := DefinePontoY(200, 200, 100, 0);
-
 {Desenhando a estrela}
   with Desenho do
   begin
-    canvas.moveto(x,y);
-    canvas.LineTo(x,y);
+    canvas.moveto(DefinePontoX(200.0, 200.0, 100.0, 0.0), DefinePontoY(200.0, 200.0, 100.0, 0.0));
   end;
 end;
 
